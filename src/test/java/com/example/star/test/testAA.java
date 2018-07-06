@@ -41,7 +41,7 @@ public class testAA {
 	@Test
 	public void testRedis() {
 		Student s = new Student();
-		s.setName("林世魁");
+		s.setName("lim");
 		s.setId(12);
 		s.setAge(23);
 		valueOperations.set("age", s);
