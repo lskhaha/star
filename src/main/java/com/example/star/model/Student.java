@@ -7,7 +7,7 @@ import org.apache.ibatis.type.Alias;
 import lombok.Data;
 
 @Data
-//@Alias("student")
+// @Alias("student")
 public class Student implements Serializable {
 
 	/**

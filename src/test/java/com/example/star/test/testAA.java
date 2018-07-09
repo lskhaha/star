@@ -28,7 +28,7 @@ public class testAA {
 
 	@Autowired
 	private StudentMapper studentDao;
-	
+
 	@Test
 	public void testLombok() {
 		Student s = new Student();
@@ -52,10 +52,10 @@ public class testAA {
 		Student s = (Student) valueOperations.get("age");
 		System.out.println("姓名:" + s.getName() + ",年龄：" + s.getAge());
 	}
-	
+
 	@Test
-	public void testMybatis(){
+	public void testMybatis() {
 		Student s = studentDao.findStudentByUsername("lim");
-		System.out.println("name::"+s.getName()+",age:"+s.getAge());
+		System.out.println("name::" + s.getName() + ",age:" + s.getAge());
 	}
 }

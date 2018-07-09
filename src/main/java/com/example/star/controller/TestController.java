@@ -16,7 +16,7 @@ public class TestController {
 
 	@Autowired
 	private StudentMapper studentDao;
-	
+
 	@RequestMapping(value = "/a", method = RequestMethod.GET)
 	public String a() {
 		Student student = studentDao.findStudentByUsername("lim");
